@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=NO9rvJBpPJAoyWxq1aKsiT5-g48FpK4NYA4oq0t1jc03XV3lX0m84b4erS7nWq0shdTyLO-MrBjXTNiqXNWfNQ" charset="UTF-8"></script><script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Video/Foto Slide TikTok</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Download Video/Foto Slide TikTok</h1>
+        <input type="text" id="tiktokUrl" placeholder="Masukkan URL TikTok">
+        <button onclick="downloadTikTok()">Download</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function downloadTikTok() {
+            const url = document.getElementById('tiktokUrl').value;
+            const resultDiv = document.getElementById('result');
+            
+            if (!url) {
+                resultDiv.innerHTML = '<p style="color:red;">Silakan masukkan URL TikTok!</p>';
+                return;
+            }
+
+            // Simulasi proses download
+            resultDiv.innerHTML = '<p>Memproses download...</p>';
+            setTimeout(() => {
+                resultDiv.innerHTML = `
+                    <p>Download berhasil!</p>
+                    <a href="#" download>Klik di sini untuk mengunduh</a>
+                `;
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
